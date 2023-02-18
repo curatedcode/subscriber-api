@@ -1,0 +1,33 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/1234512345123452346
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "subscribedToChannel": "Maxamillian"
+}
+
+### 
+
+GET http://localhost:3000/subscribers/63ef7b1728510ff497ecbbe7
+
+###
+
+DELETE http://localhost:3000/subscribers/63ef831ba26d610a1b900db2
+
+
+###
+
+PATCH http://localhost:3000/subscribers/63ef7db9e12caec071a03274
+Content-Type: application/json
+
+{
+  "name": "New guy"
+}
